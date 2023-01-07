@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+    <title>Library</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-header">Library</h1>
+      <!-- Add books -->
+      <!-- Display books -->
+      <button id="add-book">Add Book</button>
+      <form id="input-form" action="#">
+        <input
+          placeholder="Title"
+          type="text"
+          name="title"
+          id="title"
+          required
+          title="Please Enter a Valid Book Title"
+          data-input
+        />
+        <input
+          placeholder="Author"
+          type="text"
+          name="author"
+          id="author"
+          required
+          data-input
+        />
+        <input
+          placeholder="pages"
+          type="number"
+          name="pages"
+          id="pages"
+          required
+          data-input
+        />
+        <input type="checkbox" data-input name="isRead" id="isRead" />
+        <input type="submit" value="Submit" />
+      </form>
+      <div class="display-books">
+        <p id="displayNumber"></p>
+        <table id="table"></table>
+      </div>
+    </div>
+  </body>
+</html>
